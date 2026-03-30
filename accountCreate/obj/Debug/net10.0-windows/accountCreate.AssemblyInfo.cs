@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("accountCreate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcf35bdfc0da378d823a50deee2d2c12e14713df")]
 [assembly: System.Reflection.AssemblyProductAttribute("accountCreate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("accountCreate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

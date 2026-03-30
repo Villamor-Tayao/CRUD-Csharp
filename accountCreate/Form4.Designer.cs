@@ -42,14 +42,16 @@
             // label1
             // 
             label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             label1.Location = new Point(246, 64);
             label1.Name = "label1";
-            label1.Size = new Size(107, 15);
+            label1.Size = new Size(113, 15);
             label1.TabIndex = 1;
             label1.Text = "ENTER ID NUMBER";
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.WhiteSmoke;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(29, 171);
             dataGridView1.Name = "dataGridView1";
@@ -58,38 +60,49 @@
             // 
             // button1
             // 
-            button1.Location = new Point(578, 61);
+            button1.BackColor = Color.Yellow;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            button1.Location = new Point(581, 50);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(96, 43);
             button1.TabIndex = 3;
             button1.Text = "ENTER";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(318, 110);
+            button2.BackColor = Color.Red;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(297, 110);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(96, 43);
             button2.TabIndex = 4;
             button2.Text = "DELETE";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(495, 110);
+            button3.BackColor = Color.LightBlue;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
+            button3.Location = new Point(518, 110);
             button3.Name = "button3";
-            button3.Size = new Size(75, 23);
+            button3.Size = new Size(96, 43);
             button3.TabIndex = 5;
             button3.Text = "CANCEL";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // Form4
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(910, 353);
             Controls.Add(button3);
             Controls.Add(button2);
@@ -98,7 +111,7 @@
             Controls.Add(label1);
             Controls.Add(textBox1);
             Name = "Form4";
-            Text = "Form4";
+            Text = "DELETE FORM";
             Load += Form4_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

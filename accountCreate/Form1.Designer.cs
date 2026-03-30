@@ -45,51 +45,65 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F);
-            label1.Location = new Point(270, 20);
+            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            label1.Location = new Point(253, 22);
             label1.Name = "label1";
-            label1.Size = new Size(311, 32);
+            label1.Size = new Size(335, 32);
             label1.TabIndex = 0;
             label1.Text = "CRUD APPLICATION W/ SQL";
             // 
             // button1
             // 
-            button1.Location = new Point(63, 40);
+            button1.BackColor = Color.PaleGreen;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button1.Location = new Point(63, 39);
             button1.Name = "button1";
-            button1.Size = new Size(94, 33);
+            button1.Size = new Size(94, 38);
             button1.TabIndex = 11;
             button1.Text = "CREATE";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(216, 265);
+            button2.BackColor = Color.DodgerBlue;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button2.ForeColor = Color.White;
+            button2.Location = new Point(208, 270);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(94, 38);
             button2.TabIndex = 12;
             button2.Text = "SEARCH";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
-            button3.Location = new Point(63, 96);
+            button3.BackColor = Color.MediumPurple;
+            button3.FlatStyle = FlatStyle.Popup;
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button3.Location = new Point(63, 83);
             button3.Name = "button3";
-            button3.Size = new Size(94, 27);
+            button3.Size = new Size(94, 38);
             button3.TabIndex = 13;
             button3.Text = "UPDATE";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // button4
             // 
-            button4.Location = new Point(63, 147);
+            button4.BackColor = Color.Red;
+            button4.FlatStyle = FlatStyle.Popup;
+            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(63, 127);
             button4.Name = "button4";
-            button4.Size = new Size(94, 27);
+            button4.Size = new Size(94, 38);
             button4.TabIndex = 14;
             button4.Text = "DELETE";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
             // textBox1
@@ -109,18 +123,20 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             label2.Location = new Point(140, 90);
             label2.Name = "label2";
-            label2.Size = new Size(65, 15);
+            label2.Size = new Size(75, 13);
             label2.TabIndex = 17;
             label2.Text = "PERSON ID";
             // 
             // label3
             // 
             label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             label3.Location = new Point(140, 127);
             label3.Name = "label3";
-            label3.Size = new Size(71, 15);
+            label3.Size = new Size(77, 13);
             label3.TabIndex = 18;
             label3.Text = "LAST NAME";
             // 
@@ -141,18 +157,20 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             label4.Location = new Point(140, 167);
             label4.Name = "label4";
-            label4.Size = new Size(41, 15);
+            label4.Size = new Size(44, 13);
             label4.TabIndex = 21;
             label4.Text = "EMAIL";
             // 
             // label5
             // 
             label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 8.25F, FontStyle.Bold);
             label5.Location = new Point(140, 208);
             label5.Name = "label5";
-            label5.Size = new Size(86, 15);
+            label5.Size = new Size(91, 13);
             label5.TabIndex = 22;
             label5.Text = "CONTACT NO.";
             // 
@@ -161,6 +179,8 @@
             groupBox1.Controls.Add(button4);
             groupBox1.Controls.Add(button3);
             groupBox1.Controls.Add(button1);
+            groupBox1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            groupBox1.ForeColor = Color.Black;
             groupBox1.Location = new Point(516, 84);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(220, 204);
@@ -170,6 +190,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.BackgroundColor = Color.WhiteSmoke;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(38, 348);
             dataGridView1.Name = "dataGridView1";
@@ -179,6 +200,7 @@
             // 
             // Form1
             // 
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(860, 662);
             Controls.Add(dataGridView1);
             Controls.Add(groupBox1);
@@ -194,6 +216,7 @@
             Controls.Add(label1);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
+            Text = "CREATE, UPDATE, READ, DELETE FORM";
             Load += Form1_Load;
             groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();

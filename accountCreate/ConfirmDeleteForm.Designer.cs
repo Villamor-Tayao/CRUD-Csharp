@@ -40,34 +40,47 @@
             // 
             // button1
             // 
+            button1.BackColor = Color.Red;
+            button1.FlatAppearance.BorderColor = Color.Black;
+            button1.FlatAppearance.BorderSize = 2;
+            button1.FlatAppearance.MouseDownBackColor = Color.Black;
+            button1.FlatAppearance.MouseOverBackColor = Color.Black;
+            button1.FlatStyle = FlatStyle.Popup;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button1.ForeColor = Color.White;
             button1.Location = new Point(50, 110);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(75, 36);
             button1.TabIndex = 1;
             button1.Text = "YES";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.BackColor = Color.LightBlue;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button2.ForeColor = Color.White;
             button2.Location = new Point(189, 110);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(75, 36);
             button2.TabIndex = 2;
             button2.Text = "NO";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // ConfirmDeleteForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(316, 195);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
             Name = "ConfirmDeleteForm";
-            Text = "ConfirmDeleteForm";
+            Text = "CONFIRM DELETE";
             Load += ConfirmDeleteForm_Load;
             ResumeLayout(false);
             PerformLayout();
