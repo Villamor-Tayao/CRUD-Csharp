@@ -1,5 +1,5 @@
 # CRUD-Csharp
-*a project using C# for practice and as an entry practice for ASP.NET MVC*
+*a project using C# for practice*
 
 
 
@@ -13,4 +13,4 @@
 
 
 
-***NOTE*** - *This is a project for trying out C# and to get familiarized with basic to intermediate syntaxes*
+***NOTE*** - *This is a project just for trying out C#*
